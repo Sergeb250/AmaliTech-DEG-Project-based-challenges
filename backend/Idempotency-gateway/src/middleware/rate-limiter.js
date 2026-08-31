@@ -20,7 +20,7 @@ function createRateLimiter({
         return res.status(429).json({
           status: 429,
           error: "Too Many Requests",
-          message: "Rate limit exceeded. Please retry later.",
+          message: "Rate limit exceeded too many requests. Please retry later.",
           requestId: req.requestId
         });
       }
