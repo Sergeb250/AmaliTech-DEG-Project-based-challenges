@@ -1,0 +1,25 @@
+{
+  "name": "finsafe-idempotency-gateway",
+  "version": "1.0.0",
+  "description": "A pay-once payment API built with Express and PostgreSQL.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npm run db:init && node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/init-database.js",
+    "lint": "eslint src scripts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.9.1"
+  }
+}
