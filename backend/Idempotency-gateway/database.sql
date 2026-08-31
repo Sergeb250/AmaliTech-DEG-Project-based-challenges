@@ -1,3 +1,5 @@
+-- Database migration
+
 CREATE TABLE IF NOT EXISTS idempotency_records (
     id BIGSERIAL PRIMARY KEY,
     idempotency_key VARCHAR(255) UNIQUE NOT NULL,
